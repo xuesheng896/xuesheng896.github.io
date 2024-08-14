@@ -1387,7 +1387,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #4ae2ff;
+  background: #ffffcf;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2575,8 +2575,18 @@ ul.breadcrumb li:last-child {
     color: #eee;
   }
 }
-.utterances {
-  max-width: unset;
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: 0;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
+}
+@media (prefers-color-scheme: dark) {
+  .gt-container .gt-header-textarea {
+    background-color: var(--card-bg-color) !important;
+  }
 }
 .use-motion .animated {
   animation-fill-mode: none;
